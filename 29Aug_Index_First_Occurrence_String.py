@@ -17,8 +17,9 @@ class Solution:
         #needle = leeto
         for i in range(0, len(haystack)):
             #value of i: 0, 1, 2, 3, 4, 5, 6
-            #substring: l, le, lee, leet, leetc, leetco, leetcod, leetcode
+            #substring with value i incremented: l, e, e, t, c, o, d, e
             for j in range(i, len(haystack)):
+            #substring with value j incremented
             # substring:1 - le, lee, leet, leetc, leetco, leetcod, leetcode
             # substring:2 - e, ee, eet, eetc, eetco, eetcod, eetcode
             # substring:3 - e, et, etc, etco, etcod, etcode
