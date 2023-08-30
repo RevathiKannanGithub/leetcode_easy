@@ -20,7 +20,7 @@
 # Input: x = 10
 # Output: false
 # Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
-
+#
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         #x = 121
