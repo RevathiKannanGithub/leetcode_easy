@@ -23,14 +23,20 @@
 #
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
+        # n = 3
         result = []
         for i in range(1, n+1):
+            # i = 1, 2, 3
             if (i % 3 == 0) and (i % 5 == 0):
                 result.append("FizzBuzz")           
             elif i % 3 == 0:
+                # i = 3, "Fizz"
                 result.append("Fizz")
             elif i % 5 == 0:
                 result.append("Buzz")
             else:
+                # i = 1, "1"
+                # i = 2, "2"
                 result.append(str(i))
         return result
+# result = ['1', '2', "Fizz"]
