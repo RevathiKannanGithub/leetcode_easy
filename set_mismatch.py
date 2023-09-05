@@ -7,6 +7,9 @@
 #Find the number that occurs twice and the number that is missing and return them in the form of an array.
 
 
+
+from typing import List
+
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
         res = []
@@ -16,7 +19,7 @@ class Solution:
             # print(‘value of nums[i]’, nums[i])
             # print(‘value of nums[i+1]’, nums[i+1])
             if nums[i]+1 != nums[i+1]:
-                print(‘nums[i]+1 != nums[i+1]’)
+                # print(‘nums[i]+1 != nums[i+1]’)
                 res.append(nums[i])
                 res.append((nums[i+1]+1))
                 # print(‘res’, res)
@@ -25,6 +28,6 @@ class Solution:
         # print(‘value of res’, res)
         return res
 
-  if __name__ == "__main__":
-      assert Soultion().findErrorNums([1,2,2,4]) == [2,3]
-      assert Soultion().findErrorNums([1,1]) == [1,1]
+if __name__ == "__main__":
+    assert Solution().findErrorNums([1,2,2,4]) == [2,3]
+    assert Solution().findErrorNums([1,1]) == [1,1]
