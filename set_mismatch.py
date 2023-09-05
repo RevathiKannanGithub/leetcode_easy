@@ -6,8 +6,6 @@
 
 #Find the number that occurs twice and the number that is missing and return them in the form of an array.
 
-
-
 from typing import List
 
 class Solution:
@@ -15,17 +13,17 @@ class Solution:
         res = []
         new_i = 0
         for i in range(new_i, len(nums)-1):
-            # print(‘value of i’, i)
-            # print(‘value of nums[i]’, nums[i])
-            # print(‘value of nums[i+1]’, nums[i+1])
+            print('value of i', i)
+            print('value of nums[i]', nums[i])
+            print('value of nums[i+1]', nums[i+1])
             if nums[i]+1 != nums[i+1]:
-                # print(‘nums[i]+1 != nums[i+1]’)
+                # print('nums[i]+1 != nums[i+1]')
                 res.append(nums[i])
                 res.append((nums[i+1]+1))
-                # print(‘res’, res)
+                print('res', res)
                 new_i = i+2
-                # print(‘value of new_i’, new_i)
-        # print(‘value of res’, res)
+                print('value of new_i', new_i)
+        # print('value of res', res)
         return res
 
 if __name__ == "__main__":
